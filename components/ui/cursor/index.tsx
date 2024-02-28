@@ -4,32 +4,27 @@ import { useRef, useState } from "react";
 import s from "./cursor.module.scss";
 import cn from "clsx";
 import { useGSAP } from "@/hooks";
-import { initAnimation } from "./animations";
+import { init, setters } from "./animations";
 import { useWindowSizes, processVariable } from "hookings";
 
-type Setters = {
-  x: (value: number) => void;
-  y: (value: number) => void;
-} | null;
-
 const Cursor = () => {
-  const [setters, setSetters] = useState<Setters>(null);
-
   const { width } = useWindowSizes();
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    setSetters(initAnimation(cursorRef.current!));
+    init(cursorRef.current!);
   });
 
   useGSAP(() => {
-    const handler = (e: MouseEvent) =>
-      processVariable(setters, (setters) => {
-        const { x, y } = e;
 
-        setters.x(x);
-        setters.y(y);
-      });
+    const [xSetter, ySetter] = setters(cursorRef.current!);
+
+    const handler = (e: MouseEvent) => {
+      const { x, y } = e;
+      
+      xSetter(x);
+      ySetter(y);
+    };
 
     window.addEventListener("mousemove", handler);
 
