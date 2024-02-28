@@ -1,0 +1,33 @@
+@import './reset';
+@import './colors';
+@import './functions';
+@import './typography';
+@import './scroll';
+
+main {
+  font-size: 12vw;
+}
+
+a,
+button,
+input,
+label,
+textarea,
+select {
+  color: inherit;
+  cursor: pointer;
+}
+
+svg.icon {
+  path[fill],
+  rect[fill],
+  circle[fill] {
+    fill: currentColor;
+  }
+
+  path[stroke],
+  rect[stroke],
+  circle[stroke] {
+    stroke: currentColor;
+  }
+}

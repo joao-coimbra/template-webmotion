@@ -1,0 +1,52 @@
+:root {
+  // Colors
+  //  set RGB colors
+  --rgb-black: 0, 0, 0;
+  --rgb-white: 255, 255, 255;
+  //  other colors
+  --rgb-red: 255, 0, 0;
+  --rgb-green: 0, 255, 0;
+  --rgb-blue: 0, 0, 255;
+  //  opacity color
+  --opacity-color: 1;
+  //  set RGBA colors
+  --black-color: rgba(var(--rgb-black), var(--opacity-color));
+  --white-color: rgba(var(--rgb-white), var(--opacity-color));
+  --red-color: rgba(var(--rgb-red), var(--opacity-color));
+  --green-color: rgba(var(--rgb-green), var(--opacity-color));
+  --blue-color: rgba(var(--rgb-blue), var(--opacity-color));
+  //  define type colors
+  --background-color: var(--white-color);
+  --foreground-color: var(--black-color);
+  --primary-color: var(--blue-color);
+  --secondary-color: var(--red-color);
+  --ascent-color: var(--green-color);
+  --text-color: var(--black-color);
+
+  // Gradient
+  //  direction
+  --gradient-direction: to top;
+  //  set gradient color with RGB code
+  --gradient-color: var(--rgb-black);
+  //  define smooth gradient
+  --smooth-gradient: linear-gradient(
+    var(--gradient-direction),
+    rgba(var(--gradient-color), 1) 0%,
+    rgba(var(--gradient-color), 0.3) 50%,
+    rgba(var(--gradient-color), 0.15) 65%,
+    rgba(var(--gradient-color), 0.075) 75.5%,
+    rgba(var(--gradient-color), 0.037) 82.85%,
+    rgba(var(--gradient-color), 0.019) 88%,
+    rgba(var(--gradient-color), 0) 100%
+  );
+
+  // Shadow
+  //  set shadow color
+  --shadow-color: var(--rgb-black);
+  //  define shadows
+  --shadow: 0 1px 3px 0 rgba(var(--shadow-color), 0.1),
+    0 1px 2px -1px rgba(var(--shadow-color), 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(var(--shadow-color), 0.1),
+    0 4px 6px -4px rgba(var(--shadow-color), 0.1);
+  --shadow-max: 0 25px 50px -12px rgba(var(--shadow-color), 0.1);
+}
