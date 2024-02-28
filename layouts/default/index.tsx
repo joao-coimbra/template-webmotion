@@ -1,11 +1,11 @@
 "use client";
 
 import SmoothScrolling from "@/components/smooth-scrolling";
-import { useLenis } from "@studio-freight/react-lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { PropsWithChildren, useEffect } from "react";
 import { isMounted } from "hookings";
+import { useLenis } from "@studio-freight/react-lenis";
 
 if (isMounted()) {
   gsap.defaults({ ease: "none" });

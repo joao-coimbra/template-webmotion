@@ -20,21 +20,8 @@ export const useStore = create<StoreState>()((set) => ({
   cursor: {
     toggle: (state?: boolean) => {
       set((s) => ({
-        isCursorActive: state === undefined ? !s.isCursorActive : state,
+        cursorIsShow: state === undefined ? !s.cursorIsShow : state,
       }));
-    },
-    toggleWindow: (state?: boolean) => {
-      set((s) => ({
-        isCursorWindow: state === undefined ? !s.isCursorWindow : state,
-      }));
-    },
-    toggleForce: (state?: boolean) => {
-      set((s) => ({
-        forceHidden: state === undefined ? !s.forceHidden : state,
-      }));
-    },
-    setText: (value: string) => {
-      set({ cursorDisplay: value });
     },
   },
 }));
