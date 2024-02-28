@@ -1,0 +1,8 @@
+.root {
+  position: fixed;
+  z-index: 9999;
+
+  will-change: transform;
+
+  pointer-events: none;
+}

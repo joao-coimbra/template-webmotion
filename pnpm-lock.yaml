@@ -18,8 +18,8 @@ dependencies:
     specifier: ^3.12.5
     version: 3.12.5
   hookings:
-    specifier: ^2.7.11
-    version: 2.7.11
+    specifier: ^2.7.18
+    version: 2.7.18
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)(sass@1.71.1)
@@ -1450,8 +1450,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hookings@2.7.11:
-    resolution: {integrity: sha512-CD2xeWFgEE9GX/n1vYQ/aUITdBjcSbFSBmzesNMqSzbV6NaTPS25SISEYu+RLr43GrYp97HeaiFkF7+L6PZfdQ==}
+  /hookings@2.7.18:
+    resolution: {integrity: sha512-FZS6TkIrStJoa0nmUqk76IP4oaSr1FN/WsQzn+6+4VM2ZmiyWXFGKB3+jx8MNnJrBFggI5/90/exAiqy6l4Ohw==}
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)

@@ -13,7 +13,7 @@
     "@studio-freight/react-lenis": "^0.0.45",
     "clsx": "^2.1.0",
     "gsap": "^3.12.5",
-    "hookings": "^2.7.11",
+    "hookings": "^2.7.18",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",

@@ -1,8 +1,9 @@
+import MainLayout from "@/layouts/main";
+
 export default function Home() {
   return (
-    <main className="">
-      Atuadores<br/>
-      Lineares
-    </main>
+    <MainLayout>
+      Acme
+    </MainLayout>
   );
 }
