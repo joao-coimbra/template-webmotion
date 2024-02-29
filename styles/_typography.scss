@@ -5,11 +5,11 @@
   --font-sans: "DM Sans", sans-serif;
   --font-serif: "DM Serif Text", serif;
   --font-mono: "DM Mono", monospace;
+
+  --font-family: var(--font-sans);
 }
 
 * {
-  --font-family: var(--font-sans);
-
   font-family: var(--font-family);
   // font-weight: 400;
 }
