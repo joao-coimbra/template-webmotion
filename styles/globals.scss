@@ -5,13 +5,10 @@
 @import './scroll';
 @import './utils';
 
-main {
-  font-size: 12vw;
-  font-weight: 100;
-  // letter-spacing: -0.2rem;
-  line-height: 1;
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
-
 a,
 button,
 input,
