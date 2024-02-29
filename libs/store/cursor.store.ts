@@ -1,15 +1,13 @@
 export namespace CursorStore {
   export interface Props {
-    cursorIsShow: boolean;
+    // state
   }
 
   export interface Actions {
-    cursor: {
-      toggle: (state?: boolean) => void;
-    };
+    // setState
   }
 
   export const DEFAULT_PROPS: Props = {
-    cursorIsShow: false,
+    // define defaults
   };
 }
